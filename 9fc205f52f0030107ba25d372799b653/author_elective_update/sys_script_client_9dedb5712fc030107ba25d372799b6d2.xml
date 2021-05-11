@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Set the Requester to the currently logged in user for new Wish Item records. Users can change the field value.</description>
+        <field>sys_created_on</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Wish Item Set Requestor</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	
+	//Check if the form is for a new record.  If it is a new record, 
+	//set the Requester value to the currently logged in user.
+	
+	if(g_form.isNewRecord()){
+		g_form.setValue('requester',g_user.userID);
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-11 19:12:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9dedb5712fc030107ba25d372799b6d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Wish Item Set Requestor</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Wish List" source="x_400629_wish_list">9fc205f52f0030107ba25d372799b653</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wish List">9fc205f52f0030107ba25d372799b653</sys_scope>
+        <sys_update_name>sys_script_client_9dedb5712fc030107ba25d372799b6d2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-11 19:12:31</sys_updated_on>
+        <table>x_400629_wish_list_wish_list</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Wish List">9fc205f52f0030107ba25d372799b653</application>
+        <file_path/>
+        <instance_id>135926a9db4af7c49df22f17d496196d</instance_id>
+        <instance_name>dev87379</instance_name>
+        <name>sys_script_client_9dedb5712fc030107ba25d372799b6d2</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Set the Requester to the currently logged in user for new Wish Item records. Users can change the field value.&lt;/description&gt;&lt;field&gt;sys_created_on&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Wish Item Set Requestor&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+	
+	//Check if the form is for a new record.  If it is a new record, 
+	//set the Requester value to the currently logged in user.
+	
+	if(g_form.isNewRecord()){
+		g_form.setValue('requester',g_user.userID);
+	}
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-11 19:12:31&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;9dedb5712fc030107ba25d372799b6d2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Wish Item Set Requestor&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Wish List" source="x_400629_wish_list"&gt;9fc205f52f0030107ba25d372799b653&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Wish List"&gt;9fc205f52f0030107ba25d372799b653&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_9dedb5712fc030107ba25d372799b6d2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-11 19:12:31&lt;/sys_updated_on&gt;&lt;table&gt;x_400629_wish_list_wish_list&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-108721601</payload_hash>
+        <record_name>Wish Item Set Requestor</record_name>
+        <reverted_from/>
+        <source>584eedb52f8030107ba25d372799b693</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-11 19:12:31</sys_created_on>
+        <sys_id>ba2ef9312fc030107ba25d372799b6dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1795cd8522e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-11 19:12:31</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>f22ef9319ac03010bf9e148d75c27ddc</update_guid>
+        <update_guid_history>f22ef9319ac03010bf9e148d75c27ddc:-108721601</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-11 19:16:42</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>12c067665ca74e9989847c07867618e9</sys_id>
+        <sys_metadata>9dedb5712fc030107ba25d372799b6d2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Wish Item Set Requestor</sys_name>
+        <sys_package display_value="Wish List" source="x_400629_wish_list">9fc205f52f0030107ba25d372799b653</sys_package>
+        <sys_parent display_value="Wish Item">44c38db92f0030107ba25d372799b65a</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Wish List">9fc205f52f0030107ba25d372799b653</sys_scope>
+        <sys_scope_delete display_value="">1ba02951408c48448bca87dbf0a86471</sys_scope_delete>
+        <sys_update_name>sys_script_client_9dedb5712fc030107ba25d372799b6d2</sys_update_name>
+        <sys_update_version display_value="sys_script_client_9dedb5712fc030107ba25d372799b6d2">ba2ef9312fc030107ba25d372799b6dc</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-11 19:16:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
